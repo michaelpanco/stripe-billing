@@ -51,8 +51,11 @@ const Billing = (props) => {
         <div className={styles.billing}>
             <div className={styles.billing__head}>
                 <div className={styles.billing__label}>
-                    <strong>Client Billing</strong> - A full payment solution
-                    for your business, free with {props.company}
+                    <strong>Client Billing</strong> -{' '}
+                    <span>
+                        A full payment solution for your business, free with{' '}
+                        {props.company}
+                    </span>
                 </div>
                 <div className={styles.billing__action}>
                     Docs

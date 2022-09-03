@@ -52,6 +52,9 @@
 .billing__head .billing__label {
     flex: 3;
 }
+.billing__head .billing__label span {
+    color: #555555;
+}
 .billing__action {
     flex: 2;
     text-align: right;
