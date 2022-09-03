@@ -1,0 +1,10 @@
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.icon__label {
+    font-weight: 700;
+    font-size: 13px;
+    color: #555;
+}

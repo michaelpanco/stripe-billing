@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+body {
+    font-family: 'Roboto', serif;
+    background-color: #f2f2f2;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.mainContainer {
+    max-width: 1050px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+a {
+    color: #286ef1;
+    text-decoration: none;
+}
+a:hover {
+    color: #0d51ce;
+    text-decoration: underline;
+}
+.flex {
+    display: flex;
+}
+.flex > * {
+    flex: 1;
+}
+.align-right {
+    text-align: right;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.material-icon-small {
+    font-size: 6px;
+}
+.material-icon-medium {
+    font-size: 8px;
+}
+.material-icon-large {
+    font-size: 10px;
+}
+
+.material-icon-white {
+    color: #ffffff;
+}
+.material-icon-faded {
+    color: #c0c0c0;
+}
+.material-icon-dark {
+    color: #000000;
+}
+.material-icon-fill {
+    font-variation-settings: 'FILL' 400, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    margin-left: 10px;
+}
+
+.spinner {
+    animation: rotate 2s linear infinite;
+    z-index: 277;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+}
+.spinner .path {
+    stroke: rgb(9, 51, 92);
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
