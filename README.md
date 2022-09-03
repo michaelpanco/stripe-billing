@@ -9,3 +9,7 @@ Technical test for Front-End(ReactJS) Developer application
    `npm install`
 3. Start the project `npm run start`
 4. Access the local URL `http://localhost:3000`
+
+## Production
+
+Run `npm run build`, this will generate a production build to `dist` directory
